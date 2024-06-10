@@ -27,7 +27,7 @@ function Technologies() {
       <motion.h2 
       initial={{y:-100 , opacity:0}}
       whileInView={{y:0 , opacity:1}}
-      transition={{duration:1}}
+      transition={{duration:1 , type:"spring", stiffness:50}}
       className='text-center my-20 text-4xl'>Technologies</motion.h2>
       <motion.div 
       initial={{x:-100 , opacity:0}}
@@ -38,6 +38,7 @@ function Technologies() {
         variants={iconMovement(2)}
         initial="initial"
         animate="show"
+        whileHover={{scale:1.1 , originX: 0}}
         className='rounded-2xl border-4 border-neutral-800 p-4'>
             <FaHtml5 className="text-6xl text-[#e34c26]"/>
         </motion.div>
@@ -46,6 +47,7 @@ function Technologies() {
         variants={iconMovement(3)}
         initial="initial"
         animate="show"
+        whileHover={{scale:1.1}}
         className='rounded-2xl border-4 border-neutral-800 p-4'>
             <FaCss3Alt className="text-6xl text-[#2965f1]"/>
         </motion.div>
@@ -53,6 +55,7 @@ function Technologies() {
         variants={iconMovement(5)}
         initial="initial"
         animate="show"
+        whileHover={{scale:1.1}}
         className='rounded-2xl border-4 border-neutral-800 p-4'>
             <RiTailwindCssFill className="text-6xl text-cyan-500"/>
         </motion.div>
@@ -61,6 +64,7 @@ function Technologies() {
         variants={iconMovement(4)}
         initial="initial"
         animate="show"
+        whileHover={{scale:1.1}}
         className='rounded-2xl border-4 border-neutral-800 p-4'>
             <IoLogoJavascript className="text-6xl text-yellow-300"/>
         </motion.div>
@@ -69,6 +73,7 @@ function Technologies() {
         variants={iconMovement(6)}
         initial="initial"
         animate="show"
+        whileHover={{scale:1.1}}
         className='rounded-2xl border-4 border-neutral-800 p-4'>
             <FaReact className="text-6xl text-cyan-400"/>
         </motion.div>
@@ -77,6 +82,7 @@ function Technologies() {
         variants={iconMovement(3)}
         initial="initial"
         animate="show"
+        whileHover={{scale:1.1}}
         className='rounded-2xl border-4 border-neutral-800 p-4'>
             <FaNodeJs className="text-6xl text-green-500"/>
         </motion.div>
@@ -85,6 +91,7 @@ function Technologies() {
         variants={iconMovement(2)}
         initial="initial"
         animate="show" 
+        whileHover={{scale:1.1}}
         className='rounded-2xl border-4 border-neutral-800 p-4'>
             <SiMongodb className="text-6xl text-green-500"/>
         </motion.div>

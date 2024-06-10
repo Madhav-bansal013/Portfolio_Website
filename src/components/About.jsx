@@ -11,7 +11,7 @@ function About() {
       <motion.h2 
       initial={{y:-100 , opacity:0}}
       whileInView={{y:0 , opacity:1}}
-      transition={{duration:1}}
+      transition={{duration:1 , type:"spring", stiffness:50}}
       className='my-20 text-center text-4xl'>About
       <span className='text-neutral-500'> Me</span>
       </motion.h2>

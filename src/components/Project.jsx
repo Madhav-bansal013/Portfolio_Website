@@ -8,7 +8,7 @@ function Project() {
       <motion.h2 
       initial={{y:-100 , opacity:0}}
       whileInView={{y:0 , opacity:1}}
-      transition={{duration:0.5}}
+      transition={{duration:0.5 , type:"spring" , stiffness: 50}}
       className='my-20 text-center text-4xl'>Projects</motion.h2>
       <div>
         {PROJECTS.map((project , index) => (
