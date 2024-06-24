@@ -1,7 +1,7 @@
-import React, { useRef, useState, useEffect } from 'react';
-import { motion, useAnimation } from 'framer-motion';
-import emailjs from 'emailjs-com';
-import toast from 'react-hot-toast';
+import React, { useRef, useState, useEffect } from "react";
+import { motion, useAnimation } from "framer-motion";
+import emailjs from "emailjs-com";
+import toast from "react-hot-toast";
 
 const Contact = () => {
   const formRef = useRef();
@@ -41,7 +41,9 @@ const Contact = () => {
       .then(
         () => {
           setLoading(false);
-          toast.success("Thank you. I will get back to you as soon as possible.");
+          toast.success(
+            "Thank you. I will get back to you as soon as possible."
+          );
 
           setForm({
             name: "",
@@ -76,7 +78,7 @@ const Contact = () => {
 
   return (
     <div>
-      <motion.div 
+      <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
         initial="hidden"
         whileInView="show"
@@ -86,7 +88,11 @@ const Contact = () => {
           Get In Touch
         </p>
 
-        <form ref={formRef} onSubmit={handleSubmit} className="mt-12 flex flex-col gap-8">
+        <form
+          ref={formRef}
+          onSubmit={handleSubmit}
+          className="mt-12 flex flex-col gap-8"
+        >
           <label className="flex flex-col">
             <span className="text-white font-medium mb-4">Your Name</span>
             <input
@@ -137,4 +143,3 @@ const Contact = () => {
 };
 
 export default Contact;
-    
