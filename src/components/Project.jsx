@@ -1,4 +1,3 @@
-import React from "react";
 import { PROJECTS } from "../constants";
 import { motion } from "framer-motion";
 
@@ -34,6 +33,11 @@ function Project() {
               className="w-full max-w-xl lg:w-3/4"
             >
               <h6 className="mb-2 font-semibold">{project.title}</h6>
+              <button className="mr-1 rounded-lg bg-purple-500 px-2 py-1 text-sm text-neutral-200 mt-1 hover:bg-purple-900">
+                <a href={project.link} target="_blank">
+                  Link
+                </a>
+              </button>
               <p className="mb-4 text-neutral-400 leading-8">
                 {project.description}
               </p>

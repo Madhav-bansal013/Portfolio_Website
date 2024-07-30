@@ -1,5 +1,5 @@
-import React, { useRef, useState, useEffect } from "react";
-import { motion, useAnimation } from "framer-motion";
+import { useRef, useState } from "react";
+import { motion } from "framer-motion";
 import emailjs from "emailjs-com";
 import toast from "react-hot-toast";
 
